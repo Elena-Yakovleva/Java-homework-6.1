@@ -15,8 +15,8 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int expected = 180;
-        int actual = service.sumSales(sales);
+        long expected = 180;
+        long actual = service.sumSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -26,8 +26,8 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int expected = 15;
-        int actual = service.averageSales(sales);
+        long expected = 15;
+        long actual = service.averageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }

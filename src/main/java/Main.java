@@ -12,11 +12,11 @@ public class Main {
         StatsService service = new StatsService();
 
         // сумма всех продаж
-        int totalSum = service.sumSales(sales);
+        long totalSum = service.sumSales(sales);
         System.out.println("Общая сумма продаж за год составляет: " + totalSum);
 
         // средняя сумма продаж
-        int averageSalesAmount = service.averageSales(sales);
+        long averageSalesAmount = service.averageSales(sales);
         System.out.println("Средняя сумма продаж в месяц составляет: " + averageSalesAmount);
 
         // максимальные продажи
